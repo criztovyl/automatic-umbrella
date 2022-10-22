@@ -1,0 +1,2 @@
+from docker.io/bash
+cmd ["-c", "read && echo -n $REPLY; echo >&2 stderr"]
