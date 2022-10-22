@@ -11,12 +11,9 @@ import (
 	"k8s.io/client-go/tools/remotecommand"
 	"strings"
 	"time"
-	"k8s.io/klog/v2"
 )
 
 func main() {
-
-	klog.InitFlags(nil)
 
 	kubeConfig := kubeConfig()
 
