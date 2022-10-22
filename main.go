@@ -65,7 +65,6 @@ func main() {
 		},
 	}, metav1.CreateOptions{})
 
-	/*
 	defer func(){
 		fmt.Println("cleaning up KRM function")
 		err = client.CoreV1().Pods(pod.Namespace).Delete(context.TODO(), pod.Name, metav1.DeleteOptions{})
@@ -73,7 +72,6 @@ func main() {
 			panic(err)
 		}
 	}()
-	*/
 
 	if err != nil {
 		panic(err.Error())
